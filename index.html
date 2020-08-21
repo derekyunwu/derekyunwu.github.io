@@ -8,58 +8,236 @@
   </head>
   <body>
     <header>
-      <span>DEREK WU</span>
+      <span>Derek Wu</span>
       <nav class="top">
         <ul class="nav_links">
-          <li><a href="#about" class="hover-border">About</a></li>
-          <li><a href="#">Skills</a></li>
+          <li><a href="#intro" class="hover-border">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="../PDFs/resume.pdf">Resume</a></li>
         </ul>
       </nav>
-      <a class="button" href="#"><button>Contact</button></a>
+      <a class="button" href="#">Contact</a>
     </header>
 
-    <section class="header">
-      <p>Hi! My name is</p>
-      <h1>Derek Wu.</h1>
-      <p>
-        I am currently studying CS at the University of California, Santa
-        Barbara and have strong interests in Saas, machine learning, computer
-        science, virtual reality, and more.
-      </p>
+    <section class="home-img"></section>
+
+    <div class="center-div">
+      <div class="intro" id="intro">
+        <div class="intro-text">
+          <p>Hi! My name is</p>
+          <h1>Derek Wu</h1>
+          <p>
+            I am currently a rising junior studying CS at the University of
+            California, Berkeley. After spending the first half of my undergrad
+            at UCSB, I have since transferred to Berkeley for a change of pace.
+            I have strong interests in machine learning, big data, web
+            development, and virtual reality, which I look forward to pursuing
+            both privately and through the workplace.
+          </p>
+        </div>
+        <div class="intro-pic"></div>
+      </div>
+    </div>
+
+    <section class="sub">
+      <h2>Education</h2>
+      <div class="gentext">
+        <div class="pos top-left"></div>
+        <div class="pos bottom-right"></div>
+        <p>
+          For more details, such as course specifics, awards, organizations, and
+          GPA, check out my resume or my LinkedIn!
+        </p>
+      </div>
+      <div class="ed">
+        <div class="ed-box">
+          <div class="ed-entry">
+            <h4 class="date">Aug 2020</h4>
+            <div class="ed-content">
+              <h3 class="ed-title">University of California, Berkeley</h3>
+              <p>
+                Currently, I am a rising junior studying at UC Berkeley for a
+                degree in computer science (L+S). I transferred from UCSB in the
+                summer of 2020 in search of a change of pace. Although I have
+                yet to step foot on the campus as a full-blown student, I look
+                forward to spending the rest of my undergraduate experience
+                here.
+              </p>
+              <ul class="courses">
+                <li>CS61A</li>
+                <li>CS61B</li>
+                <li>CS61C</li>
+                <li>CS70</li>
+                <li>EECS16A</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ed-box">
+          <div class="ed-entry">
+            <h4 class="date">Sept 2018</h4>
+            <div class="ed-content">
+              <h3 class="ed-title">University of California, Santa Barbara</h3>
+              <p>
+                I spent half of my undergraduate collegiate experience as a
+                student at UCSB. I have not forgotten the wonderful community
+                that I have grown to love over the last 2 years. Joining UCSB
+                IEEE and TASA made it possible to pursue my interests in
+                computer science via projects and foster friendships with
+                individuals with similar academic + extracurricular interests.
+              </p>
+              <ul class="courses">
+                <li>CS130A</li>
+                <li>CS138</li>
+                <li>CS154</li>
+                <li>CS64</li>
+                <li>CS54</li>
+                <li>CS48</li>
+                <li>CS32</li>
+                <li>CS24</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ed-box">
+          <div class="ed-entry">
+            <h4 class="date">Aug 2014</h4>
+            <div class="ed-content">
+              <h3 class="ed-title">Mission San Jose High School</h3>
+              <p>
+                My four years at this local high school ultimately helped me
+                discover my passion for technology and made me realize what I
+                could accomplish through computer science. Here, I also found
+                comfort on the varsity badminton team and explored a career in
+                business operations through DECA competitions.
+              </p>
+              <ul class="courses">
+                <li>AP Comp Sci A</li>
+                <li>AP Physics C</li>
+                <li>AP Calc BC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="sub" id="about">
-      <h2>About Me</h2>
-      <p>
-        At this point in time, I've had almost four years of experience with
-        programming and programming related concepts. I've worked on a couple of
-        projects (also available on this site) that have furthered my own
-        familiarity with my interests, program design, and workplace software
-        development architectures.
-      </p>
-      <ul>
-        <li>Java</li>
-        <li>C++</li>
-        <li>Python</li>
-        <li>Agile Programming</li>
-      </ul>
-      <a href="../PDFs/resume.pdf" class="button">Resume</a>
+    <!-- <section class="sub">
+      <h2>Employment/Activities</h2>
+    </section> -->
+
+    <section class="sub" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="gentext">
+        <div class="pos top-left"></div>
+        <div class="pos bottom-right"></div>
+        <p>
+          At this point in time, I've had almost four years of experience with
+          programming and programming related concepts. I've worked on a couple
+          of projects (also available on this site) that have furthered my own
+          familiarity with my interests, program design, and workplace software
+          development architectures.
+        </p>
+      </div>
+      <div class="skills-list">
+        <h3>Python</h3>
+        <div class="container">
+          <div class="skills py"></div>
+        </div>
+
+        <h3>C++</h3>
+        <div class="container">
+          <div class="skills cplus"></div>
+        </div>
+
+        <h3>Java</h3>
+        <div class="container">
+          <div class="skills java"></div>
+        </div>
+
+        <h3>Scrum</h3>
+        <div class="container">
+          <div class="skills scrum"></div>
+        </div>
+
+        <span id="more">
+          <h3>HTML</h3>
+          <div class="container">
+            <div class="skills markup"></div>
+          </div>
+
+          <h3>CSS</h3>
+          <div class="container">
+            <div class="skills css"></div>
+          </div>
+
+          <h3>SQL</h3>
+          <div class="container">
+            <div class="skills sequel"></div>
+          </div>
+
+          <h3>AWS</h3>
+          <div class="container">
+            <div class="skills aws"></div>
+          </div>
+
+          <h3>React / React-Native</h3>
+          <div class="container">
+            <div class="skills react"></div>
+          </div>
+        </span>
+
+        <div class="center-div">
+          <div class="button-icon">
+            <button class="button3" onclick="showMoreSkills();" id="morebutton">
+              View More
+            </button>
+            <ion-icon
+              name="chevron-down-outline"
+              class="more-b"
+              id="direction-icon"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="../PDFs/resume.pdf" class="">Resume</a> -->
     </section>
 
     <section class="sub" id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li class="project-block">
-          <h1>GauchoEats</h1>
-          <p>
-            Gauchoeats is a collaborative Alexa application that provides
-            students at UCSB with live dining hall metrics (saturation, activity
-            trends, etc.) via visual and vocal responses through a mobile
-            platform.
-          </p>
-          <ul class="technologies">
+      <div class="gentext">
+        <div class="pos top-left"></div>
+        <div class="pos bottom-right"></div>
+        <p>
+          Checkout some of my projects! <br />
+          Click each card for additional information or visit the github
+          respositories for specifics.
+        </p>
+      </div>
+      <ul class="project-list">
+        <li class="card">
+          <div class="proj-img gaucho"></div>
+          <div class="proj-txt">
+            <span class="year">2019</span>
+            <h4>GauchoEats</h4>
+            <p>
+              Gauchoeats is an Amazon Alexa skill that provides students at UCSB
+              with live dining hall metrics (saturation, activity trends, etc.)
+              via visual and vocal responses through a mobile device.
+            </p>
+          </div>
+          <div class="proj-overview">
+            <div class="stat">
+              <div class="unit">Contributers</div>
+              <div class="count">5</div>
+            </div>
+            <div class="stat">
+              <div class="unit">Technologies</div>
+              <div class="count">7</div>
+            </div>
+          </div>
+          <!-- <ul class="technologies">
             <li>UCSB Dining Hall API</li>
             <li>DynamoDB</li>
             <li>EC2</li>
@@ -67,68 +245,179 @@
             <li>Boto3</li>
             <li>Python</li>
             <li>C++</li>
-          </ul>
+          </ul> -->
         </li>
-        <li class="project-block">
-          <h1>Personal Website</h1>
-          <p>
-            Built from scratch, this website provides me with a medium to
-            present my achievements and works to a larger audience. Its
-            development gave me the opportunity to explore new languages +
-            skills.
-          </p>
-          <ul class="technologies">
+        <li class="card">
+          <div class="proj-img pw"></div>
+          <div class="proj-txt">
+            <span class="year">2020</span>
+            <h4>Personal Website</h4>
+            <p>
+              A responsive website showcasing my technical background and
+              projects over the years. Built from vanilla HTML and CSS, this
+              website gave me the opportunity to explore new languages + skills.
+            </p>
+          </div>
+          <div class="proj-overview">
+            <div class="stat">
+              <div class="unit">Contributers</div>
+              <div class="count">1</div>
+            </div>
+            <div class="stat">
+              <div class="unit">Technologies</div>
+              <div class="count">3</div>
+            </div>
+          </div>
+          <!-- <ul class="technologies">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>Github</li>
-          </ul>
+          </ul> -->
         </li>
-        <li class="project-block">
-          <h1>MenuGenerator</h1>
-          <p>
-            This NetBeans application allows restaurant owners to generate
-            simplistic menu formats by entering menu options + costs through a
-            user-friendly graphical interface.
-          </p>
-          <ul class="technologies">
+        <li class="card">
+          <div class="proj-img mg"></div>
+          <div class="proj-txt">
+            <span class="year">2017</span>
+            <h4>MenuGenerator</h4>
+            <p>
+              This GUI application is built with Java Netbeans and allows
+              restaurant owners to generate simplistic menu formats by entering
+              menu options + costs through a user-friendly graphical interface.
+            </p>
+          </div>
+          <div class="proj-overview">
+            <div class="stat">
+              <div class="unit">Contributers</div>
+              <div class="count">3</div>
+            </div>
+            <div class="stat">
+              <div class="unit">Technologies</div>
+              <div class="count">3</div>
+            </div>
+          </div>
+          <!-- <ul class="technologies">
             <li>Netbeans</li>
             <li>Java</li>
             <li>GUIs</li>
-          </ul>
+          </ul> -->
         </li>
       </ul>
-      <a href="" class="button">View Less</a>
+      <div class="center-div">
+        <a href="" class="button2">View More</a>
+      </div>
+    </section>
+
+    <section class="sub">
+      <h2>Hobbies</h2>
+
+      <ul class="hobby-list">
+        <li>
+          <div class="hobby-txt right-s">
+            <h3>Badminton</h3>
+            <p>
+              I have played badminton since middle school and was a member of my
+              high school's varsity badminton team. Although I do not play on a
+              team anymore, I still take time off of my studies to practice at
+              the gym and even compete in collegiate tournaments. Just recently,
+              I placed 2nd at the UCSB Winter Open 2020 Mens D Doubles. I truly
+              enjoy playing the sport and will continue to do so once I arrive
+              at Berkeley.
+            </p>
+          </div>
+          <!-- <div class="hobby-img badmin"></div> -->
+        </li>
+
+        <li>
+          <div class="hobby-txt left-s">
+            <h3>Photo Editing</h3>
+            <p>
+              During the COVID-19 crisis, I found myself developing interest in
+              photo editing. I am currently a complete novice at both
+              photography and editing. However, I think it is an interesting
+              hobby and worth pursuing. Using Adobe Creative Cloud and some of
+              its more powerful software (Adobe Photoshop + Lightroom) I have
+              applied some basic edits to the photos on this website (some taken
+              from online sources and some I've taken myself). Check them out!
+            </p>
+          </div>
+          <!-- <div class="hobby-img editing"></div> -->
+        </li>
+
+        <li>
+          <div class="hobby-txt right-s">
+            <h3>Cardistry</h3>
+            <p>
+              I picked up cardistry in high school with a couple of friends. We
+              would spend lunch practicing and chatting about new flourishes,
+              cool tricks, and amazing cards. Currently, I use cardistry as a
+              means of fidgeting or passing the time as it helps me to think.
+              Occasionally, I will pick up a new flourish from Instagram or
+              Youtube and show it off to my friends.
+            </p>
+          </div>
+          <!-- <div class="hobby-img cardistry"></div> -->
+        </li>
+      </ul>
     </section>
 
     <section class="sub" id="contact">
       <h2>Contact Me</h2>
-      <p>Feel free to contact me through any of the following channels.</p>
-      <p>
-        Shoot me an email at
-        <a href="" class="link">derek.yun.wu@gmail.com</a> for any urgent
-        inquiries / business.
-      </p>
-      <ul>
-        <li>Email</li>
-        <li>Github</li>
-        <li>LinkedIn</li>
-        <li>Instagram</li>
-        <li>Facebook</li>
-      </ul>
+      <div class="gentext">
+        <div class="pos top-left"></div>
+        <div class="pos bottom-right"></div>
+        <p>
+          Feel free to contact me for any urgent inquiries / business. <br />
+          Shoot me an email at
+          <a href="" class="hyper">derek.yun.wu@gmail.com</a> and I'll get back
+          to you as soon as I can.
+        </p>
+      </div>
+      <div class="center-div">
+        <ul class="social">
+          <li>
+            <a href=""
+              ><ion-icon name="mail-outline" class="cont"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/kered.uw"
+              ><ion-icon name="logo-facebook" class="cont"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/derekywu/"
+              ><ion-icon name="logo-linkedin" class="cont"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/derick_wuu/"
+              ><ion-icon name="logo-instagram" class="cont"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/derekyunwu"
+              ><ion-icon name="logo-github" class="cont"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <footer>
-      <nav class="nav_links">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="../PDFs/resume.pdf">Resume</a></li>
-        </ul>
-      </nav>
-      <p>Copyright &copy 2020 Derek Wu</p>
-    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
+
+  <footer>
+    <nav class="nav_links">
+      <ul>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="../PDFs/resume.pdf">Resume</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &copy 2020 Derek Wu</p>
+  </footer>
 </html>
 
 <!--h1 = large text-->

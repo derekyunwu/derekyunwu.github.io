@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-li,
+.nav-links li,
 a,
-button {
+.button {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 16px;
@@ -60,7 +64,7 @@ header span {
   font-weight: 600;
 }
 
-button {
+.button {
   padding: 5px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -69,15 +73,519 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.button:hover {
   background-color: rgba(0, 136, 169, 0.6);
 }
+
+/* header components
+**********************************************************/
+
+.home-img {
+  background-image: url("img/bg2.jpg");
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: color;
+  background-position-x: center;
+  background-size: cover;
+  width: 100%;
+  padding: 30% 20px;
+  margin-bottom: 5%;
+}
+
+.intro {
+  display: grid;
+  grid-template: [row1-start] "text pic" 300px [row1end] / 400px 200px;
+  box-shadow: 5px 5px 15px #23272a;
+  background-color: #23272a;
+  border-radius: 15px;
+}
+
+.intro-text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px;
+  color: #edf0f1;
+}
+
+.intro-text h1 {
+  font-family: serif;
+  font-size: xx-large;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+
+.intro-text p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro-pic {
+  grid-area: pic;
+  background: url("img/beach.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* buttons
+**********************************************************/
+
+.hyper {
+  color: #6495ed;
+  text-decoration: underline;
+}
+
+.button2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 136, 169, 0.6);
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 136, 169, 0.6);
+}
+
+.center-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button2:hover {
+  background-color: rgba(0, 136, 169, 1);
+  color: white;
+}
+
+/* general body
+**********************************************************/
+
+.sub {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.sub h2,
+.sub p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.gentext {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  padding: 10px;
+  margin: 20px 10%;
+}
+
+.pos {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-top: 3px solid;
+  border-left: 3px solid;
+  border-color: #23272a;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid;
+  border-right: 3px solid;
+  border-color: #23272a;
+}
+
+@media (min-width: 992px) {
+  .gentext {
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Education
+**********************************************************/
+
+.ed {
+  margin: auto;
+  max-width: 900px;
+  background-color: #23272a;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(211, 211, 211, 0.9);
+}
+
+.ed-box {
+  position: relative;
+  margin-left: 110px;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 0;
+}
+
+.ed-box:after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: rgba(0, 136, 169, 1);
+  position: absolute;
+  top: 0;
+  left: -16px;
+}
+
+.ed-box p,
+.ed-box h3 {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+
+.ed-box h3,
+.date {
+  color: rgba(0, 136, 169, 1);
+}
+
+.ed-entry {
+  position: relative;
+  padding: 0 30px;
+}
+
+.ed-entry:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 136, 169, 1);
+  background-color: #23272a;
+  position: absolute;
+  top: 0;
+  left: -27px;
+  z-index: 5;
+}
+
+.date {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  position: absolute;
+  top: 4px;
+  left: -95px;
+  opacity: 0.6;
+}
+
+.courses {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: left;
+  padding-top: 10px;
+  margin-left: -10px;
+}
+
+.courses li {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  border: 1px solid #edf0f1;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+/* techinical skills
+**********************************************************/
+
+.skills-list {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  background-color: #23272a;
+}
+
+.skills-list h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 5px 0;
+  font-size: medium;
+  color: #edf0f1;
+}
+
+.container {
+  width: 100%;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0, 136, 169, 0.6);
+}
+
+#more {
+  display: none;
+}
+
+.py {
+  width: 90%;
+}
+.java {
+  width: 82%;
+}
+.cplus {
+  width: 85%;
+}
+.scrum {
+  width: 80%;
+}
+.css {
+  width: 80%;
+}
+.markup {
+  width: 80%;
+}
+.sequel {
+  width: 75%;
+}
+.aws {
+  width: 50%;
+}
+.react {
+  width: 30%;
+}
+
+.button-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.button3 {
+  margin-top: 10px;
+  border: none;
+  background-color: #23272a;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.more-b {
+  font-size: medium;
+  color: #edf0f1;
+}
+
+@media (min-width: 992px) {
+  .skills-list {
+    width: 950px;
+    margin: auto;
+  }
+}
+
+/* Projects
+**********************************************************/
+
+.project-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 240px 50px;
+  grid-template-areas: "img" "txt" "overview";
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  background: #23272a;
+  box-shadow: 5px 5px 15px rgba(211, 211, 211, 0.9);
+  text-align: center;
+  margin: 5% 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.proj-img {
+  grid-area: img;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.proj-txt {
+  grid-area: txt;
+  margin: 15px;
+  color: #edf0f1;
+}
+
+.proj-txt p {
+  font-size: medium;
+  margin-top: 20px;
+}
+
+.proj-txt h4 {
+  font-size: large;
+  color: rgba(0, 136, 169, 1);
+}
+
+.proj-overview {
+  grid-area: overview;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(0, 136, 169, 1);
+}
+
+.proj-overview .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.proj-overview .unit {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.proj-overview .count {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(211, 211, 211, 0.9);
+}
+
+.gaucho {
+  background: url("img/ge.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.pw {
+  background: url("img/pw.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mg {
+  background: url("img/mg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* hobby
+**********************************************************/
+
+.hobby-list {
+  margin: 5%;
+  list-style: none;
+}
+
+.hobby-list li {
+  padding: 10px;
+  position: relative;
+}
+
+.hobby-txt {
+  background-color: #23272a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(211, 211, 211, 0.9);
+}
+
+.hobby-txt h3,
+.hobby-txt p {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+
+.hobby-txt h3 {
+  color: rgba(0, 136, 169, 1);
+}
+
+.badmin {
+  background-image: url("img/badminton.jpg");
+}
+
+.cardistry {
+  background-image: url("img/cards.jpg");
+}
+
+.editing {
+  background-image: url("img/editing.jpg");
+}
+
+.hobby-img {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .hobby-list {
+    width: 950px;
+    margin: auto;
+  }
+}
+
+/* try displaying images in a horizontal scrolling photo gallery */
+
+/* Contact
+**********************************************************/
+
+.social {
+  list-style: none;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.cont {
+  font-size: 40px;
+  color: #23272a;
+  transition: 0.3s ease;
+}
+
+.cont:hover {
+  transform: scale(1.2);
+}
+
+/* footer
+**********************************************************/
 
 footer {
   justify-content: center;
   text-align: center;
   background-color: #23272a;
   padding: 30px;
+  margin-top: 5%;
 }
 
 footer p {
