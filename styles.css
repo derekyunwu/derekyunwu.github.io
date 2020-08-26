@@ -29,7 +29,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  background-color: rgba(35, 39, 42, 0.5);
+  background-color: rgba(35, 39, 42);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 10;
 }
 
 .nav_links {
@@ -85,53 +90,43 @@ header span {
 **********************************************************/
 
 .home-img {
-  background-image: url("img/bg2.jpg");
+  background-image: url("img/header.jpg");
   background-color: rgba(0, 0, 0, 0.25);
   background-blend-mode: color;
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding: 30% 20px;
+  padding: 25% 20px;
   margin-bottom: 5%;
+  margin-top: 30px;
 }
 
-.intro {
-  display: grid;
-  grid-template: [row1-start] "text pic" 300px [row1end] / 400px 200px;
-  box-shadow: 5px 5px 15px #23272a;
-  background-color: rgba(37, 36, 36, 0.87);
-  border-radius: 15px;
-}
-
-.intro-text {
-  grid-area: text;
+.content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  width: 66%;
+  margin: auto;
+}
+
+.header-txt p,
+.header-txt h1 {
   color: #edf0f1;
-}
-
-.intro-text h1 {
-  font-family: serif;
-  font-size: xx-large;
-  font-weight: 600;
-  padding: 5px 0px;
-}
-
-.intro-text p {
   font-family: "Montserrat", sans-serif;
+  font-size: 2.5vw;
 }
 
-.intro-pic {
-  grid-area: pic;
-  background: url("img/beach.jpg");
+.header-txt h1 {
+  font-size: 5vw;
+}
+
+.header-img {
+  background-image: url("img/beach.jpg");
   background-position: center;
   background-size: cover;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 /* buttons
@@ -293,6 +288,7 @@ header span {
 .courses {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: left;
   padding-top: 10px;
@@ -306,7 +302,7 @@ header span {
   border: 1px solid #edf0f1;
   border-radius: 5px;
   padding: 5px;
-  margin: 0 10px;
+  margin: 4px 10px;
 }
 
 .education {
@@ -351,14 +347,9 @@ header span {
   border-radius: 5px;
 }
 
-#more {
-  display: none;
-}
-
 .skills {
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   color: white;
   border-radius: 5px;
   background-color: rgba(0, 136, 169, 0.6);
@@ -415,6 +406,10 @@ header span {
 .more-b {
   font-size: medium;
   color: #edf0f1;
+}
+
+#more {
+  display: none;
 }
 
 @media (min-width: 992px) {
