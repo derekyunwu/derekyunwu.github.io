@@ -385,6 +385,7 @@ header span {
 .container {
   width: 100%;
   background-color: #dcdcdc;
+  opacity: 0.8;
   border-radius: 5px;
 }
 
