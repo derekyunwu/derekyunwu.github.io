@@ -8,7 +8,6 @@
   </head>
   <body>
     <header id="navbar">
-      <span>Derek Wu</span>
       <nav class="top">
         <ul class="nav_links">
           <li><a href="#intro" class="hover-border">Background</a></li>
@@ -17,36 +16,37 @@
           <li><a href="../PDFs/resume.pdf">Resume</a></li>
         </ul>
       </nav>
-      <a class="button" href="#contact">Contact</a>
+      <!-- <a class="button" href="#contact">Contact</a> -->
     </header>
 
     <div class="home-img">
-      <div class="content">
-        <div class="header-txt">
-          <p>hi! my name is</p>
-          <h1>Derek Wu</h1>
-          <p>
-            i'm a CS major at UC Berkeley
-          </p>
-        </div>
-        <div class="header-img"></div>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="content">
+      <!-- <div class="header-img"></div> -->
+      <div class="header-txt">
+        <p>hi! my name is</p>
+        <h1 id="derk"></h1>
+        <p>i'm a CS major at UC Berkeley</p>
       </div>
     </div>
 
-    <section class="sub" id="intro">
-      <h2>Employment / Activities</h2>
-    </section>
-
-    <section class="sub has-img education">
-      <h2>Education</h2>
-      <div class="gentext">
-        <div class="pos top-left"></div>
-        <div class="pos bottom-right"></div>
-        <p>
-          For more details, such as course specifics, awards, organizations, and
-          GPA, check out my resume or my LinkedIn!
-        </p>
+    <!-- <div class="content">
+      <div class="header-txt">
+        <p>hi! my name is</p>
+        <h1>Derek Wu</h1>
+        <p>i'm a CS major at UC Berkeley</p>
       </div>
+      <div class="header-img"></div>
+    </div> -->
+
+    <!-- <section class="sub" id="intro">
+      <h2>Employment / Activities</h2>
+    </section> -->
+
+    <section class="sub has-img education" id="intro">
+      <h2>Education</h2>
       <div class="ed">
         <div class="ed-box">
           <div class="ed-entry">
@@ -54,11 +54,11 @@
             <div class="ed-content">
               <h3 class="ed-title">University of California, Berkeley</h3>
               <p>
-                Currently, I am a rising junior studying at UC Berkeley for a
-                degree in computer science (L+S). I transferred from UCSB in the
-                summer of 2020 in search of a change of pace. Although I have
-                yet to step foot on the campus as a full-blown student, I look
-                forward to spending the rest of my undergraduate experience
+                Currently, I am a 3rd year transfer studying at UC Berkeley for
+                a degree in computer science (L+S). I transferred from UCSB in
+                the summer of 2020 in search of a change of pace. Although I
+                have yet to step foot on the campus as a full-blown student, I
+                look forward to spending the rest of my undergraduate experience
                 here.
               </p>
               <ul class="courses">
@@ -118,11 +118,21 @@
           </div>
         </div>
       </div>
+      <div class="gentext">
+        <div class="pos top-left"></div>
+        <div class="pos bottom-right"></div>
+        <p>
+          For more details, such as course specifics, awards, organizations, and
+          GPA, check out my resume or my LinkedIn!
+        </p>
+      </div>
+      <div class="center-div">
+        <a href="../PDFs/resume.pdf" class="button2">Resume</a>
+        <a href="https://www.linkedin.com/in/derekywu/" class="button2"
+          >LinkedIn</a
+        >
+      </div>
     </section>
-
-    <!-- <section class="sub">
-      <h2>Employment/Activities</h2>
-    </section> -->
 
     <section class="sub">
       <h2>Technical Skills</h2>
@@ -203,15 +213,6 @@
 
     <section class="sub" id="projects">
       <h2>Projects</h2>
-      <div class="gentext">
-        <div class="pos top-left"></div>
-        <div class="pos bottom-right"></div>
-        <p>
-          Checkout some of my projects! <br />
-          Click each card for additional information or visit the github
-          respositories for specifics.
-        </p>
-      </div>
       <ul class="project-list">
         <li class="card">
           <div class="proj-img gaucho"></div>
@@ -299,6 +300,14 @@
           </ul> -->
         </li>
       </ul>
+      <div class="gentext">
+        <div class="pos top-left"></div>
+        <div class="pos bottom-right"></div>
+        <p>
+          Click each card for additional information or visit the github
+          respositories for specifics.
+        </p>
+      </div>
       <div class="center-div">
         <a href="" class="button2">View More</a>
       </div>

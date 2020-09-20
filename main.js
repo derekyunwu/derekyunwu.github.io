@@ -1,5 +1,33 @@
+var start = 0;
+var name = "derk";
+var name2 = "######ek wu";
+var speed = 250;
+var pause = 600;
+
+function typingAnim() {
+  if (start < name.length) {
+    document.getElementById("derk").innerHTML += name.charAt(start);
+    start++;
+    setTimeout(typingAnim, speed);
+  } else if (start === name.length) {
+    start++;
+    setTimeout(typingAnim, pause);
+  } else if (start == name.length + 1) {
+    document.getElementById("derk").innerHTML = "der";
+    start++;
+    setTimeout(typingAnim, speed);
+  } else if (start < name2.length) {
+    document.getElementById("derk").innerHTML += name2.charAt(start);
+    start++;
+    setTimeout(typingAnim, speed);
+  }
+}
+
+typingAnim();
+
 var prev = window.pageYOffset;
 var nav = document.getElementById("navbar");
+
 window.onscroll = function () {
   var curr = window.pageYOffset;
   if (prev > curr) {

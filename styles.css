@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 * {
@@ -11,7 +12,11 @@ html {
 }
 
 body {
-  background-color: #2c2f33;
+  height: 100%;
+  background-image: url("img/photo2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .nav-links li,
@@ -26,10 +31,9 @@ a,
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 10px 10%;
-  background-color: rgba(35, 39, 42);
+  background-color: rgba(35, 39, 42, 0.5);
   position: fixed;
   width: 100%;
   top: 0;
@@ -75,7 +79,7 @@ header span {
 
 .button {
   padding: 5px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgba(0, 136, 169, 0.7);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -83,30 +87,57 @@ header span {
 }
 
 .button:hover {
-  background-color: rgba(0, 136, 169, 0.6);
+  background-color: rgba(0, 136, 169, 1);
 }
 
 /* header components
 **********************************************************/
 
-.home-img {
-  background-image: url("img/header.jpg");
-  background-color: rgba(0, 0, 0, 0.25);
-  background-blend-mode: color;
-  background-position-x: center;
+/* .home-img {
+  background-image: url("img/photo.jpg");
+  background-position: center;
   background-size: cover;
-  width: 100%;
-  padding: 25% 20px;
-  margin-bottom: 5%;
-  margin-top: 30px;
+  background-attachment: fixed;
+  height: 100%;
+} */
+
+/* .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+} */
+
+#derk {
+  display: inline;
+  border-right: solid 3px #edf0f1;
+  animation: animated-cursor 600ms steps(29, end) infinite;
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: #edf0f1;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 66%;
   margin: auto;
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translate(0, 40%);
+  z-index: 3;
+  height: 100%;
+}
+
+.header-txt {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .header-txt p,
@@ -121,12 +152,19 @@ header span {
 }
 
 .header-img {
-  background-image: url("img/beach.jpg");
+  background-image: url("img/face.jpg");
   background-position: center;
   background-size: cover;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 #23272a, 0 6px 20px 0 #23272a;
+}
+
+@media (min-width: 992px) {
+  .header-txt p {
+    font-size: 1.5rem;
+  }
 }
 
 /* buttons
@@ -141,10 +179,11 @@ header span {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: rgba(0, 136, 169, 0.6);
+  color: #edf0f1;
   padding: 5px 20px;
   border-radius: 50px;
-  border: 1px solid rgba(0, 136, 169, 0.6);
+  border: 1px solid #edf0f1;
+  margin: 0 20px;
 }
 
 .center-div {
@@ -154,16 +193,18 @@ header span {
 }
 
 .button2:hover {
-  background-color: rgba(0, 136, 169, 1);
-  color: white;
+  background-color: #edf0f1;
+  color: #23272a;
+  transition: 0.3s ease;
 }
 
 /* general body
 **********************************************************/
 
 .sub {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% auto;
+  max-width: 1200px;
+  background-color: transparent;
 }
 
 .sub h2,
@@ -182,11 +223,10 @@ header span {
   margin-top: 5%;
   margin-bottom: 5%;
   position: relative;
-  padding: 10px;
-  margin: 20px 10%;
+  padding: 0;
 }
 
-.pos {
+/* .pos {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -206,7 +246,7 @@ header span {
   border-bottom: 3px solid;
   border-right: 3px solid;
   border-color: #edf0f1;
-}
+} */
 
 @media (min-width: 992px) {
   .gentext {
@@ -221,11 +261,10 @@ header span {
 **********************************************************/
 
 .ed {
-  margin: auto;
+  margin: 30px auto;
   max-width: 900px;
-  background-color: #23272a;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(37, 36, 36, 0.87);
 }
 
 .ed-box {
@@ -239,7 +278,7 @@ header span {
   content: "";
   width: 4px;
   height: 100%;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: #edf0f1;
   position: absolute;
   top: 0;
   left: -4px;
@@ -252,9 +291,10 @@ header span {
   text-align: left;
 }
 
-.ed-box h3,
-.date {
-  color: rgba(0, 136, 169, 1);
+.date,
+.ed-box h3 {
+  color: #edf0f1;
+  letter-spacing: 2px;
 }
 
 .ed-entry {
@@ -265,14 +305,14 @@ header span {
 
 .ed-entry:after {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  border: 3px solid rgba(0, 136, 169, 1);
-  background-color: rgba(35, 39, 42, 1);
+  border: 3px solid #edf0f1;
+  background-color: #edf0f1;
   position: absolute;
   top: 0;
-  left: -15px;
+  left: -12px;
   z-index: 5;
 }
 
@@ -305,7 +345,7 @@ header span {
   margin: 4px 10px;
 }
 
-.education {
+/* .education {
   background-image: url("img/bg2.jpg");
 }
 
@@ -320,7 +360,7 @@ header span {
   padding: 5%;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: color;
-}
+} */
 
 /* techinical skills
 **********************************************************/
@@ -331,7 +371,8 @@ header span {
   padding: 20px;
   padding-bottom: 5px;
   border-radius: 5px;
-  background-color: #23272a;
+  background-color: transparent;
+  border: 1px solid #edf0f1;
 }
 
 .skills-list h3 {
@@ -393,7 +434,7 @@ header span {
 .button3 {
   margin-top: 10px;
   border: none;
-  background-color: #23272a;
+  background-color: transparent;
   color: #edf0f1;
   font-family: "Montserrat", sans-serif;
   font-weight: 100px;
@@ -435,7 +476,7 @@ header span {
   grid-template-areas: "img" "txt" "overview";
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
-  background: #23272a;
+  background: rgba(35, 39, 42, 0.6);
   box-shadow: 5px 5px 15px rgba(37, 36, 36, 0.87);
   text-align: center;
   margin: 5% 20px;
@@ -459,6 +500,7 @@ header span {
   letter-spacing: 1px;
   font-size: medium;
   margin-top: 20px;
+  color: #edf0f1;
 }
 
 .proj-txt h4 {
@@ -473,7 +515,7 @@ header span {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: rgba(0, 136, 169, 1);
+  background: rgba(0, 136, 169, 0.6);
 }
 
 .proj-overview .stat {
@@ -505,18 +547,21 @@ header span {
   background: url("img/ge.jpg");
   background-position: center;
   background-size: cover;
+  opacity: 0.8;
 }
 
 .pw {
   background: url("img/pw.jpg");
   background-position: center;
   background-size: cover;
+  opacity: 0.8;
 }
 
 .mg {
   background: url("img/mg.jpg");
   background-position: center;
   background-size: cover;
+  opacity: 0.8;
 }
 
 /* hobby
@@ -540,10 +585,10 @@ header span {
   box-shadow: 5px 5px 15px rgba(37, 36, 36, 0.87);
 }
 
-.hobby-txt:hover,
+/* .hobby-txt:hover,
 .active {
   background-color: rgba(35, 39, 42, 0.75);
-}
+} */
 
 .hobby-txt h3,
 .hobby-txt p {
@@ -575,8 +620,6 @@ header span {
   }
 }
 
-/* try displaying images in a horizontal scrolling photo gallery */
-
 /* Contact
 **********************************************************/
 
@@ -605,7 +648,7 @@ header span {
 footer {
   justify-content: center;
   text-align: center;
-  background-color: #23272a;
+  background-color: rgba(35, 39, 42, 0.5);
   padding: 30px;
   margin-top: 5%;
 }
