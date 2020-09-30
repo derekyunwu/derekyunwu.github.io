@@ -70,15 +70,15 @@ function showMoreSkills() {
 //   }
 // }
 
-function badBackground(elem) {
-  var hobby = document.getElementById("hobby");
-  hobby.style.backgroundImage = elem.getAttribute("img-url");
-  var hobbies = hobby.getElementsByClassName("hobby-txt");
+// function badBackground(elem) {
+//   var hobby = document.getElementById("hobby");
+//   hobby.style.backgroundImage = elem.getAttribute("img-url");
+//   var hobbies = hobby.getElementsByClassName("hobby-txt");
 
-  for (var i = 0; i < hobbies.length; i++) {
-    if (hobbies[i].className.includes("active")) {
-      hobbies[i].className = hobbies[i].className.replace(" active", "");
-    }
-  }
-  elem.className += " active";
-}
+//   for (var i = 0; i < hobbies.length; i++) {
+//     if (hobbies[i].className.includes("active")) {
+//       hobbies[i].className = hobbies[i].className.replace(" active", "");
+//     }
+//   }
+//   elem.className += " active";
+// }
