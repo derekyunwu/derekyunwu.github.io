@@ -13,7 +13,7 @@ html {
 
 body {
   height: 100%;
-  background-image: url("img/photo2.jpg");
+  background-image: url("img/final.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -93,19 +93,6 @@ header span {
 /* header components
 **********************************************************/
 
-/* .home-img {
-  background-image: url("img/photo.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
-} */
-
-/* .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-} */
-
 #derk {
   display: inline;
   border-right: solid 3px #edf0f1;
@@ -126,10 +113,8 @@ header span {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  /* position: absolute; */
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
   transform: translate(0, 40%);
   z-index: 3;
   height: 100%;
@@ -149,16 +134,6 @@ header span {
 
 .header-txt h1 {
   font-size: 5vw;
-}
-
-.header-img {
-  background-image: url("img/face.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 #23272a, 0 6px 20px 0 #23272a;
 }
 
 @media (min-width: 992px) {
@@ -193,7 +168,7 @@ header span {
 }
 
 .button2:hover {
-  background-color: #edf0f1;
+  background-color: rgba(237, 240, 241, 0.85);
   color: #23272a;
   transition: 0.3s ease;
 }
@@ -205,6 +180,7 @@ header span {
   margin: 5% auto;
   max-width: 1200px;
   background-color: transparent;
+  margin-bottom: 400px;
 }
 
 .sub h2,
@@ -248,12 +224,69 @@ header span {
   border-color: #edf0f1;
 } */
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .gentext {
-    width: 800px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 4%;
+  }
+}
+
+/* Employment
+**********************************************************/
+.employ {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.employ-txt,
+.employ-date {
+  font-family: "Montserrat", sans-serif;
+  color: #edf0f1;
+  font-weight: bold;
+  font-size: large;
+}
+
+.employ-date {
+  font-size: small;
+  color: rgba(0, 136, 169, 1);
+}
+
+.special {
+  color: #ff6961;
+}
+
+.employ-img {
+  width: 100%;
+  height: 300px;
+  margin: 10px auto;
+}
+
+.workday {
+  background-image: url("img/workday.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.staples {
+  background-image: url("img/staples.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nasa {
+  background-image: url("img/nasa.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .employ {
+    margin: 5% 5%;
   }
 }
 
@@ -290,10 +323,8 @@ header span {
   font-family: "Montserrat", sans-serif;
   text-align: left;
 }
-
-.date,
 .ed-box h3 {
-  color: #edf0f1;
+  color: rgba(0, 136, 169, 1);
   letter-spacing: 2px;
 }
 
@@ -318,6 +349,8 @@ header span {
 
 .date {
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  color: #edf0f1;
   font-size: small;
   position: absolute;
   top: 4px;
@@ -391,7 +424,7 @@ header span {
 
 .skills {
   text-align: right;
-  padding: 10px 0;
+  height: 20px;
   color: white;
   border-radius: 5px;
   background-color: rgba(0, 136, 169, 0.6);
@@ -454,10 +487,9 @@ header span {
   display: none;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .skills-list {
-    width: 950px;
-    margin: auto;
+    margin: auto 4%;
   }
 }
 
@@ -569,7 +601,7 @@ header span {
 **********************************************************/
 
 .hobby-list {
-  margin: 5%;
+  margin: 4%;
   list-style: none;
 }
 
@@ -641,6 +673,10 @@ header span {
 
 .cont:hover {
   transform: scale(1.2);
+}
+
+.end {
+  margin-bottom: 300px;
 }
 
 /* footer
